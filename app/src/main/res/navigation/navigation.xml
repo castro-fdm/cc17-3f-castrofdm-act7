@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.mycityapp.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_categoryOneFragment"
+            app:destination="@id/categoryOneFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_categoryTwoFragment"
+            app:destination="@id/categoryTwoFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_categoryThreeFragment"
+            app:destination="@id/categoryThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryOneFragment"
+        android:name="com.example.mycityapp.CategoryOneFragment"
+        android:label="fragment_category_one"
+        tools:layout="@layout/fragment_category_three" >
+        <action
+            android:id="@+id/action_categoryOneFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryThreeFragment"
+        android:name="com.example.mycityapp.CategoryThreeFragment"
+        android:label="fragment_category_three"
+        tools:layout="@layout/fragment_category_three" >
+        <action
+            android:id="@+id/action_categoryThreeFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryTwoFragment"
+        android:name="com.example.mycityapp.CategoryTwoFragment"
+        android:label="fragment_category_two"
+        tools:layout="@layout/fragment_category_two" >
+        <action
+            android:id="@+id/action_categoryTwoFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+</navigation>

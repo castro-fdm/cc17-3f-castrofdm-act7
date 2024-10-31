@@ -4,4 +4,6 @@
     <string name="religious_sites_category">Religious Sites</string>
     <string name="eat_and_shops_category">Eats/Shops</string>
     <string name="recreational_category">Recreational</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
