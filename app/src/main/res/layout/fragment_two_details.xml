@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FEF3E2"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="#D6ED15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,7 +20,7 @@
         <!-- Nested ImageButton acting as a back button -->
         <ImageButton
             android:id="@+id/backButton"
-            android:layout_width="60dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:background="?attr/selectableItemBackgroundBorderless"
@@ -32,10 +33,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
             android:gravity="center"
+            android:paddingRight="32sp"
             android:text="@string/recommendation"
             android:textColor="#000001"
             android:textSize="32sp"
+            android:textStyle="bold|italic"
             tools:layout_editor_absoluteX="76dp"
             tools:layout_editor_absoluteY="22dp" />
 
@@ -54,5 +58,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:paddingTop="8dp"
+        android:textColor="#1A1A1A"
         android:textSize="18sp" />
 </LinearLayout>

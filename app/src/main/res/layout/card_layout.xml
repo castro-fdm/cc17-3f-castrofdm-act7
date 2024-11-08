@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:background="#FFFFFF">
+    android:background="#FEF3E2">
 
 
     <androidx.cardview.widget.CardView
@@ -15,7 +15,7 @@
         android:layout_margin="10sp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        app:cardBackgroundColor="#D6ED15"
+        app:cardBackgroundColor="#FAB12F"
         app:cardCornerRadius="16dp"
         app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="12sp"
-            android:background="#D6ED15"
+            android:background="#FAB12F"
             android:orientation="horizontal">
 
             <ImageView
