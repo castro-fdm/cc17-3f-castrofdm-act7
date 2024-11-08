@@ -40,6 +40,9 @@
         <action
             android:id="@+id/action_categoryTwoFragment_to_dashboardFragment"
             app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_categoryTwoFragment_to_twoDetailsFragment"
+            app:destination="@id/twoDetailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/categoryThreeFragment"
@@ -49,13 +52,32 @@
         <action
             android:id="@+id/action_categoryThreeFragment_to_dashboardFragment"
             app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_categoryThreeFragment_to_threeDetailsFragment"
+            app:destination="@id/threeDetailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.example.mycityapp.DetailsFragment"
+        android:name="com.example.mycityapp.OneDetailsFragment"
         android:label="DetailsFragment" >
         <action
             android:id="@+id/action_detailsFragment_to_categoryOneFragment"
             app:destination="@id/categoryOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twoDetailsFragment"
+        android:name="com.example.mycityapp.TwoDetailsFragment"
+        android:label="TwoDetailsFragment" >
+        <action
+            android:id="@+id/action_twoDetailsFragment_to_categoryTwoFragment"
+            app:destination="@id/categoryTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/threeDetailsFragment"
+        android:name="com.example.mycityapp.ThreeDetailsFragment"
+        android:label="ThreeDetailsFragment" >
+        <action
+            android:id="@+id/action_threeDetailsFragment_to_categoryThreeFragment"
+            app:destination="@id/categoryThreeFragment" />
     </fragment>
 </navigation>

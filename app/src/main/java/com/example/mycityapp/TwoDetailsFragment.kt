@@ -10,21 +10,16 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.findNavController
 
-/**
- * A simple [Fragment] subclass.
- * Use the [DetailsFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class DetailsFragment : Fragment() {
+class TwoDetailsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_details, container, false)
+        // Inflate the layout for this fragment
+        val view = inflater.inflate(R.layout.fragment_two_details, container, false)
 
         val backBtn = view.findViewById<ImageButton>(R.id.backButton)
-        backBtn.setOnClickListener { it.findNavController().navigate(R.id.action_detailsFragment_to_categoryOneFragment)}
-
+        backBtn.setOnClickListener { it.findNavController().navigate(R.id.action_twoDetailsFragment_to_categoryTwoFragment) }
         // Get data from bundle
         val imageResId = arguments?.getInt("imageResId") ?: 0
         val description = arguments?.getString("description") ?: ""

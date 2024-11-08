@@ -13,7 +13,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="#D6ED15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,9 +36,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:paddingRight="12sp"
             android:text="@string/eat_and_shops_category"
+            android:textAlignment="center"
             android:textColor="#000001"
             android:textSize="32sp"
+            android:textStyle="bold|italic"
             tools:layout_editor_absoluteX="76dp"
             tools:layout_editor_absoluteY="22dp" />
 

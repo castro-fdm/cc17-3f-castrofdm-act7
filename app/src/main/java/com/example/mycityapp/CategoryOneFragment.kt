@@ -63,7 +63,7 @@ class CategoryOneFragment : Fragment() {
         populateData()
 
         // Set up the adapter for the RecyclerView
-        recyclerView.adapter = AdapterClass(dataList)
+        recyclerView.adapter = AdapterOneClass(dataList)
 
         return view
     }

@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 
-class AdapterClass(private val dataList: ArrayList<DataClass>): RecyclerView.Adapter<AdapterClass.ViewHolderClass>() {
+class AdapterOneClass(private val dataList: ArrayList<DataClass>): RecyclerView.Adapter<AdapterOneClass.ViewHolderClass>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderClass {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.card_layout, parent, false)
@@ -37,7 +37,7 @@ class AdapterClass(private val dataList: ArrayList<DataClass>): RecyclerView.Ada
 
     class ViewHolderClass(itemView:     View): RecyclerView.ViewHolder(itemView){
         val rvImage: ImageView = itemView.findViewById(R.id.cardImage)
-        val rvContentText: TextView = itemView.findViewById(R.id.contentText)
+        val rvContentText: TextView = itemView.findViewById(R.id.textContent)
     }
 
 }

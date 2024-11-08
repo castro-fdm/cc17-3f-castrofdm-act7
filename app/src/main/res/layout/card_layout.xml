@@ -9,33 +9,45 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/categoryOne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="#D6ED15"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:background="#D6ED15"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/cardImage"
-                android:layout_width="35dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="0"
                 android:adjustViewBounds="true"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/food_logo" />
 
             <TextView
-                android:id="@+id/contentText"
+                android:id="@+id/textContent"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="TextView" />
+                android:text="@string/eat_and_shops_category"
+                android:textColor="#1a1a1a"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
